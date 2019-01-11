@@ -2,34 +2,64 @@ body{
   font-family: 'Sawarabi Mincho','Kosugi', sans-serif;
   margin: 0;
 }
+.container{
+  width: 1170px;
+  margin: 0px auto;
+}
 h1{
   font-family: 'Kosugi';
       font-weight: 600;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+// ヘッダー
 header{
+  width: 100%;
   background-color: white;
   position: fixed;
   z-index: 10;
+  height: 75px;
+  .container{
+    line-height: 75px;
+  }
   .header-left{
-    padding: 35px 10px;
     display: inline-block;
     .logo{
-      width: 320px;
+      width: 300px;
     }
   }
   .header-right{
     float: right;
     display: inline-block;
-    padding: 35px 10px;
     ul{
-      padding-left: 0
+      padding-left: 0;
+      margin: 0
     }
-    li{
+    li,a{
+      color: black;
       font-size: 20px;
       line-height: 70px;
       list-style: none;
       display: inline-block;
       margin: 0 10px;
     }
+  }
+}
+.top-heading{
+  padding-top: 75px;
+  text-align: center;
+  background-image: url("/Users/HaseMac/Desktop/second-charange/img/top-heading_bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 778px;
+  .container{
+    padding: 50px 0px;
   }
 }
